@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Peta Kecamatan Curug</title>
+		<link rel="stylesheet" type="text/css" href="https://kel-sambutan.samarindakota.go.id/themes/kelurahan/library/css/style.css">
+    <style type="text/css">
+		
+        body {
+            color: #5d5d5d;
+            font-family: Helvetica, Arial, sans-serif;
+						background-color: hsla(89, 43%, 51%, 0.3);
+        }
+
+        h1 {
+            font-size: 30px;
+            margin: auto;
+            margin-top: 20px;
+						text-align: center;						
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: auto;
+						text-align: center;						
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Specific mapael css class are below
+         * 'mapael' class is added by plugin
+        */
+
+        .mapael .map {
+            position: relative;
+        }
+
+        .mapael .mapTooltip {
+            position: absolute;
+            background-color: #fff;
+            moz-opacity: 0.70;
+            opacity: 0.70;
+            filter: alpha(opacity=70);
+            border-radius: 10px;
+            padding: 10px;
+            z-index: 1000;
+            max-width: 200px;
+            display: none;
+            color: #343434;
+        }
+				
+		
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"
+            charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js" charset="utf-8"></script>
+    <script src="js/jquery.mapael.js" charset="utf-8"></script>
+    <script src="js/maps/kec_curug.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $(".mapcontainer").mapael({
+                map: {
+                    name: "kec_curug",
+                    defaultArea: {
+                        attrs: {
+                            stroke: "#fff",
+                            "stroke-width": 1
+                        },
+                        attrsHover: {
+                            "stroke-width": 2
+                        }
+                    }
+                },
+                legend: {
+                    area: {
+                        title: "Populasi penduduk berdasarkan desa",
+                        slices: [
+                            {
+                                max: 3000,
+                                attrs: {
+                                    fill: "#97e766"
+                                },
+                                label: "Kurang dari 3.000 jiwa"
+                            },
+                            {
+                                min: 3000,
+                                max: 5000,
+                                attrs: {
+                                    fill: "#7fd34d"
+                                },
+                                label: "Antara 3.000 - 5.000 jiwa"
+                            },
+                            {
+                                min: 5000,
+                                max: 10000,
+                                attrs: {
+                                    fill: "#5faa32"
+                                },
+                                label: "Antara 5.000 - 10.000 jiwa"
+                            },
+                            {
+                                min: 10000,
+                                attrs: {
+                                    fill: "#3f7d1a"
+                                },
+                                label: "Lebih dari 10 ribu jiwa"
+                            }
+                        ]
+                    }
+                },
+                areas: {
+                    "ID-AC" :{
+                        value: "15516",
+                        href: "#",
+                        tooltip: {content: "<span style=\"font-weight:bold;\">Binong (4.77	KM2)</span><br />Populasi : 15.516"}
+                    },
+										"ID-BA" :{
+                        value: "3936",
+                        href: "#",
+                        tooltip: {content: "<span style=\"font-weight:bold;\">Cukang Galih (3.68 KM2)</span><br />Population : 3.936"}
+                    },
+										"ID-BB" :{
+                        value: "6861",
+                        href: "#",
+                        tooltip: {content: "<span style=\"font-weight:bold;\">Curug Kulon (3.1 KM2)</span><br />Population : 6.861"}
+                    },
+										"ID-BE" :{
+                        value: "4708",
+                        href: "#",
+                        tooltip: {content: "<span style=\"font-weight:bold;\">Curug Wetan (3.31 KM2)</span><br />Population : 4.708"}
+                    },
+										"ID-BT" :{
+                        value: "8142",
+                        href: "#",
+                        tooltip: {content: "<span style=\"font-weight:bold;\">Kadu (5.75 KM2)</span><br />Population : 8.142"}
+                    },
+										"ID-GO" :{
+                        value: "6361",
+                        href: "#",
+                        tooltip: {content: "<span style=\"font-weight:bold;\">Kadu Jaya (3.62 KM2)</span><br />Population : 6.361"}
+                    },
+										"ID-JA" :{
+                        value: "6229",
+                        href: "#",
+                        tooltip: {content: "<span style=\"font-weight:bold;\">Sukabakti (3.12 KM2)</span><br />Population : 6.229"}
+                    }
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+<div class="container">
+
+		
+		<div class="header-bg">
+				<div class="header-image" data-autoplay="8">
+						<div class="image-layer" style="background-image:url('https://kel-sambutan.samarindakota.go.id/upload/customizes/sambutan_header.jpg')">
+						</div>
+				</div>
+		</div>
+<div id="core">
+            <div class="c-container">
+                <div class="row">
+								
+									<h1>SELAMAT DATANG</h1>
+									<h2>DI MONOGRAFI KECAMATAN CURUG</h2>
+
+									<div class="mapcontainer">
+											<div class="map">
+													<span>Alternative content for the map</span>
+											</div>
+											<div class="areaLegend">
+													<span>Alternative content for the legend</span>
+											</div>
+									</div>
+
+</div>
+</div>
+            </div>
+        </div>
+				
+				
+<!--
+    <p><b>All example for jQuery Mapael are available <a href="https://www.vincentbroute.fr/mapael/">here</a>.</b></p>
+-->
+</div>
+
+
+</body>
+</html>
